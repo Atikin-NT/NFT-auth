@@ -13,20 +13,16 @@ ethereumButton.addEventListener('click', () => {
     console.log(tmp);
 
 
-    const url = "https://api.etherscan.io/api?module=account";
-    const apiKey = 'QU339WY2ZB4P5STB2GFPQJTSSAYPJC1KAR';
-    let response = fetch(url, {
-      method: 'POST',
-      headers: {
-        'address': '0x64bF23663F23dC5f452F9f00d7BeAe08072f978C',
-        'contractaddress': '0x76be3b62873462d2142405439777e971754e8e77',
-        'page': 1,
-        'offset': 100,
-        'startblock': 0,
-        'endblock': 99999999,
-        'sort': 'asc',
-        'apikey': apiKey
-      }
-    });
-    console.log(response.json())
+    // const contractAddress = `0x018BeFB7D1F3e84948466ef15Cc46bAF9Ba5295F`;
+    // const _account = `0x64bF23663F23dC5f452F9f00d7BeAe08072f978C`;
+
+    // let url = `https://etherscan.io/token/generic-tokenholder-inventory?&contractAddress=${contractAddress}&a=${_account}&pUrl=token`;
+    //   axios.get(url).then((data) => { 
+    //     const $ = Cheerio.load(data.data);
+    //     let str = $('#body > div.d-md-flex.justify-content-between.mb-4 > p').text().trim().match(/\d+/)[0];
+    //     // console.log(str);
+    //     count = parseInt(str);
+    //     console.log(count);
+    //   })
+    // console.log(response.json());
 });
